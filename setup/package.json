@@ -1,12 +1,20 @@
 {
-  "name": "thepopebot-setup",
+  "name": "agentbot-setup",
   "version": "1.0.0",
   "type": "module",
-  "description": "Interactive setup wizard for thepopebot",
+  "description": "Interactive setup wizard for agentbot",
   "main": "setup.mjs",
+  "bin": {
+    "agentbot-setup": "./setup.mjs"
+  },
   "scripts": {
     "setup": "node setup.mjs"
   },
+  "files": [
+    "**/*.mjs",
+    "lib/**/*",
+    "!node_modules/**"
+  ],
   "dependencies": {
     "chalk": "^5.3.0",
     "inquirer": "^9.2.12",
